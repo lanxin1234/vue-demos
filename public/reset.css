@@ -1,0 +1,307 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  overflow: visible;
+  outline: none;
+  border: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -.02rem;
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.t1 {
+  font-size: 0.38rem;
+  font-weight: normal;
+}
+
+.t2 {
+  font-size: 0.36rem;
+  font-weight: 500;
+}
+
+.t3 {
+  font-size: 0.28rem;
+  font-weight: 600;
+}
+
+.t4 {
+  font-size: 0.26rem;
+  font-weight: 600;
+}
+
+.t5 {
+  font-size: 0.22rem;
+  font-weight: 400;
+}
+
+.t5.blod {
+  font-weight: 600;
+}
+
+.t6 {
+  font-size: 0.18rem;
+  font-weight: 400;
+}
+
+.t6.blod {
+  font-weight: 600;
+}
+
+.text {
+  font-size: 0.16rem;
+  font-weight: 400;
+  // text-align: justify;
+}
+
+.small {
+  font-size: 0.14rem;
+  font-weight: 600;
+}
+
+.flexbetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clear {
+  float: none;
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.blod {
+  font-weight: 600;
+}
+
+.overHiding {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.nodata {
+  display: block;
+  text-align: center;
+  font-size: 0.18rem;
+  line-height: 0.25rem;
+  margin-top: 0.2rem;
+  color: #9B9B9B;
+}
+
+p {
+  margin: 0;
+}
+//global
+// @font-face {
+//   font-family: din;
+//   src: url("../assets/din.otf");
+// }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: Arial,sans-serif ,-apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-size: 0.16rem;
+  padding: 0;
+  margin: 0 !important;
+}
+
+html {
+  background: $bg;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,li,ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #9B9B9B;
+}
+/* 使用webkit内核的浏览器 */
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #9B9B9B;
+}
+/* Firefox版本4-18 */
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #9B9B9B;
+}
+/* Firefox版本19+ */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 4px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+  scrollbar-arrow-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.2);
+  scrollbar-arrow-color: red;
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  // -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 0;
+  // background: rgba(0,0,0,0.1);
+}
