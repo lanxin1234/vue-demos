@@ -12,7 +12,7 @@ module.exports = {
           },
         },
         minimize: true,
-        quiet: true,
+        quiet: true
       }),
     ],
   },
