@@ -40,9 +40,7 @@ export default {
     code1: "<Child2 v-bind='$attrs' v-on='$listeners'></Child2>",
     code2: "<Child2 v-bind='$attrs' v-on='$listeners'></Child2>"
   }),
-  created() {
-    console.log('获取到方法', this.$listeners);
-  },
+  created() {},
   methods: {
     getFruit(key) {
       switch (key) {

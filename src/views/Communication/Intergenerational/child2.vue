@@ -28,10 +28,7 @@ export default {
   data: () => ({
 
   }),
-  created() {
-    //do something after creating vue instance
-    console.log('获取', this.$attrs, this.$listeners);
-  },
+  created() {},
   methods: {
     getFruit(key) {
       switch (key) {
