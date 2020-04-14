@@ -41,13 +41,6 @@
   }
 </script>
 <style lang="scss">
-  .code {
-    display: inline-block;
-    padding: 0 8px;
-    border-radius: 4px;
-    background: rgba(0, 0, 0, 0.1);
-  }
-
   .fruitbox {
     p {
       float: left;

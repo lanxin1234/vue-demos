@@ -37,11 +37,17 @@ export default {
           name: '父子组件通信',
           path: '/parentAndChild'
         }, {
-          name: '隔代组件通信',
+          name: '隔代组件通信$attrs',
           path: '/intergenerational'
+        }, {
+          name: '隔代组件通信provide',
+          path: '/IntergenerationalPro'
         }, {
           name: '兄弟组件通信',
           path: '/brothers'
+        }, {
+          name: '总结',
+          path: '/Summary'
         }]
       }]
     };

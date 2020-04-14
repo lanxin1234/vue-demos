@@ -31,6 +31,16 @@ const routes = [{
     path: '/brothers',
     name: 'Brothers',
     component: () => import('../views/Communication/Brothers/Brothers.vue')
+  },
+  {
+    path: '/summary',
+    name: 'summaryCom',
+    component: () => import('../views/Communication/Summary/Summary.vue')
+  },
+  {
+    path: '/IntergenerationalPro',
+    name: 'IntergenerationalPro',
+    component: () => import('../views/Communication/IntergenerationalPro/IntergenerationalPro.vue')
   }
 ]
 
