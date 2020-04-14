@@ -13,18 +13,20 @@
   <p>我通过 <span class="code">this.$attrs</span> 接受水果</p>
   <div class="">
     <p>
-      <a-button type='primary'>我想把所有的水果给我儿子 😊</a-button>
-
+      <span>把所有的水果给我儿子 😊:</span>
+      <p>
+        <codemirror v-model="code1" :options="global.cmOptions" />
+      </p>
     </p>
-    <p>
-      <a-button type="danger">我只想把苹果和梨给我儿子 😊</a-button>
-    </p>
-    <p>
-      <a-button>我想把所有的水果给我儿子 😊</a-button>
-    </p>
+    <span class="btn">
+      <a-button @click='eatApple'>吃一个苹果this.$listeners.appleHandle(false)</a-button>
+    </span>
+    <span>
+      <a-button @click='addApple'>添加一个苹果this.$listeners.appleHandle(true)</a-button>
+    </span>
   </div>
   <hr />
-  <Child2></Child2>
+  <Child2 v-bind='$attrs' v-on='$listeners'></Child2>
 </div>
 </template>
 <script>
@@ -35,11 +37,11 @@ export default {
     Child2
   },
   data: () => ({
-
+    code1: "<Child2 v-bind='$attrs' v-on='$listeners'></Child2>",
+    code2: "<Child2 v-bind='$attrs' v-on='$listeners'></Child2>"
   }),
   created() {
-    //do something after creating vue instance
-    console.log('this.$attrs', this.$attrs);
+    console.log('获取到方法', this.$listeners);
   },
   methods: {
     getFruit(key) {
@@ -56,6 +58,12 @@ export default {
         default:
 
       }
+    },
+    eatApple() {
+      this.$listeners.appleHandle(true)
+    },
+    addApple() {
+      this.$listeners.appleHandle(false)
     }
   }
 }
@@ -65,5 +73,9 @@ textarea {
     width: 100%;
     height: 40px;
     line-height: 56px;
+}
+.btn {
+    display: inline-block;
+    margin-right: 20px;
 }
 </style>

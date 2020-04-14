@@ -1,5 +1,6 @@
 <template>
   <div id="intergenerational">
+    <p>隔代通信通过<span class="code">$attrs 和 $listener</span></p>
     <h2>我是爷爷 👴</h2>
     <div class="fruitbox">
       <p>我有 {{apple}}个🍎</p>
@@ -10,7 +11,7 @@
     <p>我通过以下方法把水果传给我儿子 👨</p>
     <codemirror v-model="code" :options="global.cmOptions" />
     <hr />
-    <Child :apple='apple' :banana='banana' :pear='pear'></Child>
+    <Child :apple='apple' :banana='banana' :pear='pear' @appleHandle='appleHandle'></Child>
   </div>
 </template>
 <script>
@@ -26,10 +27,16 @@
       apple: 5,
       banana: 6,
       pear: 7,
-      code: "<Child :apple='apple' :banana='banana' :pear='pear'></Child>"
+      code: "<Child :apple='apple' :banana='banana' :pear='pear' @appleHandle='appleHandle''></Child>"
     }),
-    created() {
-      console.log('当前的11', this.global);
+    created() {},
+    methods: {
+      appleHandle(value) {
+        if (value)
+          this.apple++;
+        else
+          this.apple--;
+      }
     }
   }
 </script>
